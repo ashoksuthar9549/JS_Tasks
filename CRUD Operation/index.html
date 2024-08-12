@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS CRUD Opertaion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <!-- <script src="./index.js" defer></script> -->
+    <script src="./index2.js" defer></script>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="container">
+                <h1>JS CRUD Operation</h1>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <ul class="notifications"></ul>
+
+                <div class="addformData">
+                    <input type="text" id="title" placeholder="Title" value="">
+                    <input type="text" id="body" placeholder="Body" value="">
+                    <button id="submit" onclick="addData()">Add</button>
+                </div>
+
+                <div class="editformData">
+                    <input type="text" id="title" placeholder="Title" value="">
+                    <input type="text" id="body" placeholder="Body" value="">
+                </div>
+
+                <div class="table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Title</th>
+                                <th>Body</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

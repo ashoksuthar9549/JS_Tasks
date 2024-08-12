@@ -1,0 +1,115 @@
+body{
+    background: radial-gradient(#2f2a43, #222031);
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+    margin: 20px auto;
+    padding: 0;
+}
+
+.container{
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.checklist{
+    align-items: center;
+    -webkit-backdrop-filter: blur(80px) brightness(1.25);
+    backdrop-filter: blur(80px) brightness(1.25);
+    border-radius: 8px;
+    box-shadow: 0 8px 16px -12px rgba(15, 14, 19, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    margin-bottom: 24px;
+    padding: 24px;
+}
+
+h1{
+    text-align: center;
+}
+
+.add-item{
+    position: relative;
+    width: 100%;
+}
+
+input[type="text"]{
+    background: #222031;
+    border-radius: 40px;
+    border: 1px solid transparent;
+    box-shadow: inset 0 2px 4px rgba(15, 14, 19, 0.25);
+    color: #ffffff;
+    display: block;
+    font-size: 16px;
+    height: 100%;
+    outline: none;
+    padding: 14px 20px;
+    width: 90%;
+}
+
+#add{
+    background: #1aa7f5;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px -6px rgba(15, 14, 19, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    height: 32px;
+    padding: 0 12px;
+    position: absolute;
+    right: 30px;
+    transition: background-color 0.2s ease;
+    top: 8px;
+}
+
+#add:hover{
+    background: #1a91f5;
+}
+
+#add.disabled{
+    background: #1f1d2b;
+    cursor: not-allowed;
+}
+
+.delete{
+    color: #a49ebd;
+    cursor: pointer;
+    font-size: 24px;
+    margin-left: auto;
+    margin-top: -2px;
+    text-decoration: none !important;
+    transform: rotate(45deg);
+    background: transparent;
+    border: none;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #222031;
+    padding: 12px 0;
+    position: relative;
+    gap: 20px;
+}
+
+.item-toggle.marked{
+    background-color: #a49ebd;
+    border-color: #a49ebd;
+}
+
+.item-toggle {
+    border: 1px solid #a49ebd;
+    border-radius: 999px;
+    cursor: pointer;
+    height: 20px;
+    margin-right: 8px;
+    width: 20px;
+}

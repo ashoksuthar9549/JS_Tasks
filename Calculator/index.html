@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="calculator">
+                <div class="screen">
+                    <div class="previous-screen"></div>
+                    <div class="current-screen"></div>
+                    <!-- <h2 class="screen-text"></h2> -->
+                </div>
+
+                <div class="buttons">
+                    <div class="row">
+                        <button class="btn clearAllBtn">AC</button>
+                        <button class="btn" data-operator="%">%</button>
+                        <button class="btn"><img src="./assests/img/Vector.png" alt=""></button>
+                        <button class="btn" data-operator="pie">pie</button>
+                        <button class="btn clearBtn"><span><img src="./assests/img/ic_baseline-clear.png" alt=""></span></button>
+                    </div>
+
+                    <div class="row">
+                        <button class="btn" data-operator="square">x<sup>2</sup></button>
+                        <button class="btn" data-operator="cube">x<sup>3</sup></button>
+                        <button class="btn" data-operator="sin">sin</button>
+                        <button class="btn" data-operator="cos">cos</button>
+                        <button class="btn" data-operator="tan">tan</button>
+                    </div>
+
+                    <div class="row">
+                        <button class="btn" data-operator="exp">e<sup>x</sup></button>
+                        <button class="btn" data-operator="1/x">1/x</button>
+                        <button class="btn" data-operator="sin-inverse">sin<sup>-1</sup></button>
+                        <button class="btn" data-operator="cos-inverse">cos<sup>-1</sup></button>
+                        <button class="btn" data-operator="tan-inverse">tan<sup>-1</sup></button>
+                    </div>
+
+                    <div class="row">
+                        <button class="btn" data-operand="1">1</button>
+                        <button class="btn" data-operand="2">2</button>
+                        <button class="btn" data-operand="3">3</button>
+                        <button class="btn" data-operator="/">/</button>
+                        <button class="btn" data-operator="*">*</button>
+                    </div>
+
+                    <div class="row">
+                        <button class="btn" data-operand="4">4</button>
+                        <button class="btn" data-operand="5">5</button>
+                        <button class="btn" data-operand="6">6</button>
+                        <button class="btn" data-operator="+-">+-</button>
+                        <button class="btn" data-operator="-">-</button>
+                    </div>
+
+                    <div class="row">
+                        <button class="btn" data-operand="7">7</button>
+                        <button class="btn" data-operand="8">8</button>
+                        <button class="btn" data-operand="9">9</button>
+                        <button class="btn" data-operator="!">n!</button>
+                        <button class="btn" data-operator="+">+</button>
+                    </div>
+
+                    <div class="row">
+                        <button class="btn" data-operand="0">0</button>
+                        <button class="btn" data-operand=".">.</button>
+                        <button class="btn" data-operator="(">(</button>
+                        <button class="btn" data-operator=")">)</button>
+                        <button class="btn equalBtn">=</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
