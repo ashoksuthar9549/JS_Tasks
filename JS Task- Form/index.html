@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JS Task">
+    <title>JS Task - Form </title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="container">
+                <div class="tabs">
+                    <div class="tab">
+                        <div class="tab__item tab__item--active" data-tab="1">
+                            <div class="tab__indicator__wrap">
+                                <div class="tab__indicator tab__indicator--active">1</div>
+                                <div class="tab__lines">
+                                    <div class="tab__line__left  tab__line--active"></div>
+                                    <div class="tab__line__right "></div>
+                                </div>
+                            </div>
+                            <h3>Personal Details</h3>
+                        </div>
+                        <div class="tab__item" data-tab="2">
+                            <div class="tab__indicator__wrap">
+                                <div class="tab__indicator">2</div>
+                                <div class="tab__lines">
+                                    <div class="tab__line__left"></div>
+                                    <div class="tab__line__right "></div>
+                                </div>
+                            </div>
+                            <h3>Contact Details</h3>
+                        </div>
+                        <div class="tab__item" data-tab="3">
+                            <div class="tab__indicator__wrap">
+                                <div class="tab__indicator">3</div>
+                                <div class="tab__lines">
+                                    <div class="tab__line__left"></div>
+                                    <div class="tab__line__right "></div>
+                                </div>
+                            </div>
+                            <h3>Upload Documents/Images</h3>
+                        </div>
+                        <div class="tab__item" data-tab="4">
+                            <div class="tab__indicator__wrap">
+                                <div class="tab__indicator">4</div>
+                                <div class="tab__lines"> </div>
+                            </div>
+                            <h3>Submit</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="content" method="POST">
+                    <div class="content__item content__item--active" id="tab__content-1">
+                        <div class="personal__details">
+                            <h3>Personal Details</h3>
+
+                            <div class="form__wrapper">
+                                <div class="form__group">
+                                    <label for="name">Candidate Name As per 10th Marksheet/10th Exam Form</label>
+                                    <input type="text" data-input="text" id="name" name="name" placeholder="Enter Name">
+                                    <span class="error"></span>
+                                </div>
+
+                                <div class="form__group">
+                                    <label for="father__name">Father's Name</label>
+                                    <input type="text" data-input="text" id="father__name" name="father__name" placeholder="Enter Father's Name">
+                                    <span class="error"></span>
+                                </div>
+
+                                <div class="form__group">
+                                    <label for="mother__name">Mother's Name</label>
+                                    <input type="text" data-input="text" id="mother__name" name="mother__name" placeholder="Enter Mother's Name">
+                                    <span class="error"></span>
+                                </div>
+
+                                <div class="form__group">
+                                    <label for="dob">Date of Birth</label>
+                                    <input type="date" id="dob" name="dob">
+                                    <span class="error"></span>
+                                </div>
+
+                                <div class="form__group">
+                                    <div class="gender__radio radio">
+                                        <label>Gender</label>
+                                        <div class="form__group">
+                                            <input type="radio" name="gender" id="male" value="male">
+                                            <label for="male">Male</label>
+                                            <input type="radio" name="gender" id="female" value="female">
+                                            <label for="female">Female</label>
+                                        </div>
+                                    </div>
+                                    <span class="error"></span>
+                                </div>
+
+                                <div class="form__group">
+                                    <div class="domicile__radio radio">
+                                        <label>Domicile</label>
+                                        <div class="form__group">
+                                            <input type="radio" name="domicile" id="dom1" value="gujrat">
+                                            <label for="dom1">Gujarat</label>
+                                            <input type="radio" name="domicile" id="dom2" value="other">
+                                            <label for="dom2">Other</label>
+                                        </div>
+                                    </div>
+                                    <span class="error"></span>
+                                </div>
+
+                                <div class="form__group">
+                                    <label for="nationality">Nationality</label>
+                                    <input type="text" data-input="text" id="nationality" name="nationality" placeholder="Enter Nationality">
+                                    <span class="error"></span>
+                                </div>
+
+                                <div class="form__group">
+                                    <div class="category__dropdown dropdown">
+                                        <label>Category</label>
+                                        <div class="form__group">
+                                            <div id="category" class="dropdown__with__input">
+                                                <div class="dropdown__wrap">
+                                                    <input type="text" placeholder="Search Category" id="category__input" name="category">
+                                                    <div class="dropdown__list">
+                                                        <span>General</span>
+                                                        <span>OBC</span>
+                                                        <span>SC</span>
+                                                        <span>ST</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="error"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sub__category__details">
+                            <h3>Sub Category Details</h3>
+
+                            <div class="form__wrapper">
+                                <div class="form__group">
+                                    <div class="physical__radio radio">
+                                        <label>Physical Handicapped</label>
+                                        <div class="form__group">
+                                            <input type="radio" name="physical" id="handicapped" value="yes">
+                                            <label for="handicapped">Yes</label>
+                                            <input type="radio" name="physical" id="not__handicapped" value="no">
+                                            <label for="not__handicapped">No</label>
+                                        </div>
+                                    </div>
+                                    <span class="error"></span>
+                                </div>
+                                <div class="form__group">
+                                    <div class="service__radio radio">
+                                        <label>IN/EX-Servicemen</label>
+                                        <div class="form__group">
+                                            <input type="radio" name="serviceman" id="serviceman" value="yes">
+                                            <label for="serviceman">Yes</label>
+                                            <input type="radio" name="serviceman" id="not__serviceman" value="no">
+                                            <label for="not__serviceman">No</label>
+                                        </div>
+                                    </div>
+                                    <span class="error"></span>
+                                </div>
+                                <div class="form__group">
+                                    <div class="tuition__radio radio">
+                                        <label>Tuition Fee Waiver</label>
+                                        <div class="form__group">
+                                            <input type="radio" name="tuition" id="fee__waiver" value="yes">
+                                            <label for="fee__waiver">Yes(Eligible for SC/ST Caste Only) </label>
+                                            <input type="radio" name="tuition" id="not__fee__waiver" value="no">
+                                            <label for="not__fee__waiver">No</label>
+                                        </div>
+                                    </div>
+                                    <span class="error"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="other__information">
+                            <h3>Other Information</h3>
+
+                            <div class="form__wrapper">
+                                <div class="form__group">
+                                    <div class="income__certificate__radio radio">
+                                        <label>Family Annual Income As per Income Certificate</label>
+                                        <div class="form__group">
+                                            <input type="radio" name="income" id="2.5l_or_less" value="2.5l_or_less">
+                                            <label for="2.5l_or_less"> Less than 2.5 Lakh (Required for SC/ST Caste Only)</label>
+                                            <input type="radio" name="income" id="2.5l_to_8l" value="2.5l_to_8l">
+                                            <label for="2.5l_to_8l">2.51 Lakh to 8 Lakh</label>
+                                            <input type="radio" name="income" id="8l_or_more" value="8l_or_more">
+                                            <label for="8l_or_more">Greater than 8 Lakh</label>
+                                        </div>
+                                    </div>
+                                    <span class="error"></span>
+                                </div>
+
+                                <div class="form__group">
+                                    <div class="service__certificate__radio radio">
+                                        <label>Do your parents have certificate of services</label>
+                                        <div class="form__group">
+                                            <input type="radio" name="service__certificate" id="have__service" value="yes">
+                                            <label for="have__service">Yes</label>
+                                            <input type="radio" name="service__certificate" id="no_service" value="no">
+                                            <label for="no_service">No</label>
+                                        </div>
+                                    </div>
+                                    <span class="error"></span>
+                                </div>
+
+                                <div class="form__group">
+                                    <div class="free__ship__card__radio radio">
+                                        <label>Free Ship Card (Eligible for SC/ST Caste Only)</label>
+                                        <div class="form__group">
+                                            <input type="radio" name="ship" id="have__free__ship__card" value="yes">
+                                            <label for="have__free__ship__card">Yes</label>
+                                            <input type="radio" name="ship" id="not__have__free__ship__card" value="no">
+                                            <label for="not__have__free__ship__card">No</label>
+                                        </div>
+                                    </div>
+                                    <span class="error"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content__item" id="tab__content-2">
+                        <div class="correspondence__details">
+                            <h3>Correspondence Details</h3>
+
+                            <div class="form__wrapper">
+                                <div class="form__group">
+                                    <label for="premise">Premise No./Name</label>
+                                    <input type="text" data-input="text" id="premise" placeholder="Enter Premise No./Name" name="premise">
+                                    <span class="error"></span>
+                                </div>
+
+                                <div class="form__group">
+                                    <label for="colony">Sub Locality/Colony (spanal)</label>
+                                    <input type="text" data-input="text" id="colony" placeholder="Sub Locality/Colony (spanal)" name="colony">
+                                    <span class="error"></span>
+                                </div>
+
+                                <div class="form__group">
+                                    <label for="locality">Locality/City/Town/Village</label>
+                                    <input type="text" data-input="text" id="locality" placeholder="Enter Locality/City/Town/Village" name="locality">
+                                    <span class="error"></span>
+                                </div>
+
+                                <div class="form__group">
+                                    <label for="country">Country</label>
+                                    <input type="text" data-input="text" id="country" placeholder="Enter Country" name="country">
+                                    <span class="error"></span>
+                                </div>
+
+                                <div class="form__group">
+                                    <div class="state__dropdown dropdown">
+                                        <label>State</label>
+                                        <div class="form__group">
+                                            <div id="state" class="dropdown__with__input">
+                                                <div class="dropdown__wrap">
+                                                    <input type="text" placeholder="Search Category" id="state__input" name="state">
+                                                    <div class="dropdown__list">
+                                                        <span>Select State</span>
+                                                        <span>Gujarat</span>
+                                                        <span>Rajasthan</span>
+                                                        <span>Uttar Pradesh</span>
+                                                        <span>Maharashtra</span>
+                                                        <span>Karnataka</span>
+                                                        <span>Chattisgarh</span>
+                                                        <span>Madhya Pradesh</span>
+                                                        <span>Punjab</span>
+                                                        <span>Haryana</span>
+                                                        <span>Uttarakhand</span>
+                                                        <span>Himachal Pradesh</span>
+                                                        <span>Jammu and Kashmir</span>
+                                                        <span>West Bengal</span>
+                                                        <span>Assam</span>
+                                                        <span>Bihar</span>
+                                                        <span>Goa</span>
+                                                        <span>Arunachal Pradesh</span>
+                                                        <span>Manipur</span>
+                                                        <span>Meghalaya</span>
+                                                        <span>Mizoram</span>
+                                                        <span>Tripura</span>
+                                                        <span>Sikkim</span>
+                                                        <span>Nagaland</span>
+                                                        <span>Andhra Pradesh</span>
+                                                        <span>Kerala</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="error"></div>
+                                </div>
+
+                                <div class="form__group">
+                                    <div class="district__dropdown dropdown">
+                                        <label>District</label>
+                                        <div class="form__group">
+                                            <div id="district" class="dropdown__with__input">
+                                                <div class="dropdown__wrap">
+                                                    <input type="text" placeholder="Search Category" id="district__input" name="district">
+                                                    <div class="dropdown__list">
+                                                        <span>Select State</span>
+                                                        <span >Sirohi</span>
+                                                        <span >Rajkot</span>
+                                                        <span >Jaipur</span>
+                                                        <span >Bhopal</span>
+                                                        <span >Gorakhpur</span>
+                                                        <span >Mumbai</span>
+                                                        <span >Pune</span>
+                                                        <span >Nagpur</span>
+                                                        <span >Chandigarh</span>
+                                                        <span >Kota</span>
+                                                        <span >Bareilly</span>
+                                                        <span >Meerut</span>
+                                                        <span >Dehradun</span>
+                                                        <span >Kanpur</span>
+                                                        <span >Ludhiana</span>
+                                                        <span >Allahabad</span>
+                                                        <span >Varanasi</span>
+                                                        <span >Gwalior</span>
+                                                        <span >Indore</span>
+                                                        <span >Jalandhar</span>
+                                                        <span >Karnal</span>
+                                                        <span >Faridabad</span>
+                                                        <span >Panipat</span>
+                                                        <span >Ghaziabad</span>
+                                                        <span >Gurgaon</span>
+                                                        <span >Mangaluru</span>
+                                                        <span >Raipur</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="error"></span>
+                                </div>
+
+                                <div class="form__group">
+                                    <label for="pincode">Pincode</label>
+                                    <input type="number" id="pincode" placeholder="Enter Pincode" name="pincode">
+                                    <span class="error"></span>
+                                </div>
+
+                                <div class="form__group">
+                                    <label for="alternate__email">Alternate Email(spanal)</label>
+                                    <input type="email" id="alternate__email" placeholder="Enter Alternate Email" name="alternate__email">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="permanent__details">
+                            <h3>Permanent Details</h3>
+
+                            <div class="form__group">
+                                <div class="permanet__check checkbox">
+                                    <div class="form__group">
+                                        <input type="checkbox" name="permanent__checkbox" id="permanent__checkbox">
+                                        <label for="permanent__checkbox">Same as Correspondence Address</label>
+                                    </div>
+                                </div>
+                                <span class="error"></span>
+                            </div>  
+
+                            <div class="form__wrapper">
+                                <div class="form__group">
+                                    <label for="permanent__premise">Premise No./Name</label>
+                                    <input type="text" data-input="text" id="permanent__premise" placeholder="Enter Premise No./Name" name="permanent__premise">
+                                    <span class="error"></span>
+                                </div>
+
+                                <div class="form__group">
+                                    <label for="permanent__colony">Sub Locality/Colony (spanal)</label>
+                                    <input type="text" data-input="text" id="permanent__colony" placeholder="Sub Locality/Colony (spanal)" name="permanent__colony">
+                                    <span class="error"></span>
+                                </div>
+
+                                <div class="form__group">
+                                    <label for="permanent__locality">Locality/City/Town/Village</label>
+                                    <input type="text" data-input="text" id="permanent__locality" placeholder="Enter Locality/City/Town/Village" name="permanent__locality">
+                                    <span class="error"></span>
+                                </div>
+
+                                <div class="form__group">
+                                    <label for="permanent__country">Country</label>
+                                    <input type="text" data-input="text" id="permanent__country" placeholder="Enter Country" name="permanent__country">
+                                    <span class="error"></span>
+                                </div>
+
+                                <div class="form__group">
+                                    <div class="permanent__state__dropdown dropdown">
+                                        <label for="permanent__state">State</label>
+                                        <div class="form__group">
+                                            <select name="permanent__state" id="permanent__state">
+                                                <option value="">Select State</option>
+                                                <option value="gujrat">Gujarat</option>
+                                                <option value="rajasthan">Rajasthan</option>
+                                                <option value="uttar__pradesh">Uttar Pradesh</option>
+                                                <option value="maharastra">Maharashtra</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="error"></div>
+                                </div>
+
+                                <div class="form__group">
+                                    <div class="permanent__district__dropdown dropdown">
+                                        <label for="permanent__district">District</label>
+                                        <div class="form__group">
+                                            <select name="permanent__district" id="permanent__district">
+                                                <option value="">Select State</option>
+                                                <option value="sirohi">Sirohi</option>
+                                                <option value="jaipur">Jaipur</option>
+                                                <option value="gorakhpur">Gorakhpur</option>
+                                                <option value="mumbai">Mumbai</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <span class="error"></span>
+                                </div>
+
+                                <div class="form__group">
+                                    <label for="permanent__pincode">Pincode</label>
+                                    <input type="number" id="permanent__pincode" placeholder="Enter Pincode" name="permanent__pincode">
+                                    <span class="error"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content__item" id="tab__content-3">
+                        <div class="list__view">
+                            <h3>List View</h3>
+
+                            <div class="form__wrapper">
+                                <div class="form__group">
+                                    <label for="document__type">Documennt Type</label>
+                                    <input type="text" data-input="text" id="document__type" placeholder="Enter Document Type" name="document__type">
+                                    <span class="error"></span>
+                                </div>
+
+                                <div class="form__group">
+                                    <label for="document__number">Document Number</label>
+                                    <input type="number" id="document__number" placeholder="Enter Document Number" name="document__number">
+                                    <span class="error"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="edit__form">
+                            <h3>Edit Form</h3>
+
+                            <div class="form__wrapper">
+                                <div class="form__group">
+                                    <div class="upload__section">
+                                        <label>PhotoGraph</label>
+                                        <div class="file__upload__wrapper">
+                                            <input type="file" id="photograph" accept="image/jpg" name="photograph">
+                                            <img class="upload__image" alt="Photograph">
+                                            <div class="image__preview">
+                                                <picture>
+                                                    <source srcset="./assests/upload-image.webp" type="image/webp">
+                                                    <source srcset="./assests/upload-image.png" type="image/png">
+                                                    <img src="./assests/upload-image.png" alt="Upload Image" title="Upload Image" width="128">
+                                                </picture>
+                                                <h3>Upload Image</h3>
+                                            </div>
+                                            <div class="image__remove">
+                                                <picture>
+                                                    <source srcset="./assests/delete.webp" type="image/webp">
+                                                    <source srcset="./assests/delete.png" type="image/png">
+                                                    <img src="./assests/delete.png" alt="remove" title="Remove Image" width="50">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                        <span class="filename"></span>
+                                        <span class="error"></span>
+                                    </div>
+                                </div>
+
+                                <div class="form__group">
+                                    <div class="upload__section">
+                                        <label>School Leaving Certificate/Transfer Certificate</label>
+                                        <div class="file__upload__wrapper">
+                                            <input type="file" id="leving__certificate" accept="application/pdf" name="leving__certificate">
+                                            <img class="upload__image" alt="File">
+                                            <div class="image__preview">
+                                                <picture>
+                                                    <source srcset="./assests/document.webp" type="image/webp">
+                                                    <source srcset="./assests/document.png" type="image/png">
+                                                    <img src="./assests/document.png" alt="Upload File" title="Upload File" width="128">
+                                                </picture>
+                                                <h3>Upload File</h3>
+                                            </div>
+                                            <div class="image__remove">
+                                                <picture>
+                                                    <source srcset="./assests/delete.webp" type="image/webp">
+                                                    <source srcset="./assests/delete.png" type="image/png">
+                                                    <img src="./assests/delete.png" alt="remove" title="Remove Image" width="50">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                        <span class="filename"></span>
+                                        <span class="error"></span>
+                                    </div>
+                                </div>
+
+                                <div class="form__group">
+                                    <div class="upload__section">
+                                        <label>Income Certificate (Required for SC/ST Caste Only)</label>
+                                        <div class="file__upload__wrapper">
+                                            <input type="file" id="income__certificate" accept="application/pdf" name="income__certificate">
+                                            <img class="upload__image" alt="File">
+                                            <div class="image__preview">
+                                                <picture>
+                                                    <source srcset="./assests/document.webp" type="image/webp">
+                                                    <source srcset="./assests/document.png" type="image/png">
+                                                    <img src="./assests/document.png" alt="Upload File" title="Upload File" width="128">
+                                                </picture>
+                                                <h3>Upload File</h3>
+                                            </div>
+                                            <div class="image__remove">
+                                                <picture>
+                                                    <source srcset="./assests/delete.webp" type="image/webp">
+                                                    <source srcset="./assests/delete.png" type="image/png">
+                                                    <img src="./assests/delete.png" alt="remove" title="Remove Image" width="50">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                        <span class="filename"></span>
+                                        <span class="error"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content__item" id="tab__content-4">
+
+                        <div class="display__data">
+
+                            <div class="data__wrapper">
+                               
+                            </div>
+                        </div>
+
+                        <div class="success__view">
+                            <h3>Data Added Successfully, Do you want to submit</h3>
+                        </div>
+                    </div>
+
+                    <div class="tab__buttons">
+                        <button class="tab__button tab__button--prev hidden">Previous</button>
+                        <button class="tab__button tab__button--next">Next</button>
+                        <button type="submit" class="tab__button tab__button--submit hidden">Submit</button>
+                    </div>
+                </form>
+
+                <div class="toaster">
+                    <div class="toaster-line"></div>
+                    <p>test</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
